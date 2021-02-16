@@ -1,0 +1,59 @@
+@import "../variables"
+
+.brandWrap
+    background-color: #F1E4E6
+    min-height: 363px
+
+    .container
+        min-height: inherit
+
+        .brandLeft
+            display: none
+
+        .brandRight
+            min-height: inherit
+            display: flex
+            justify-content: center
+            align-items: center
+            color: $mainDarkColor
+
+            .brandLabelText
+                border-left: #F16D7F solid 12px
+                padding-left: 15px
+                box-sizing: border-box
+                height: 61px
+
+                div:first-child
+                    font-weight: 900
+                    font-size: 38px
+                    line-height: 38px
+
+                div:last-child
+                    font-weight: bold
+                    font-size: 20px
+                    line-height: 24px
+
+                    span
+                        color: #F16D7F
+
+                .brandLabelBar
+                    display: inline-block
+                    background-color: #F16D7F
+                    width: 12px
+                    height: 61px
+
+@media ( min-width: $breakpoint-tablet )
+    .brandWrap
+        min-height: 367.57px
+
+        .container
+            min-height: inherit
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+            .brandLeft
+                display: block
+
+@media ( min-width: $breakpoint-laptop )
+    .brandWrap
+        min-height: 765px
