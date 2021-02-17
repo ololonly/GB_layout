@@ -1,52 +1,54 @@
 @import "../variables"
 
+.brand
+    position: relative
+    display: flex
+
 .brandWrap
     background-color: #F1E4E6
     min-height: 363px
+    width: 100%
 
-    .container
+    .brandLeft
+        display: none
+
+    .brandRight
         min-height: inherit
+        display: flex
+        justify-content: center
+        align-items: center
+        color: $mainDarkColor
 
-        .brandLeft
-            display: none
+        .brandLabelText
+            border-left: #F16D7F solid 12px
+            padding-left: 15px
+            box-sizing: border-box
+            height: 61px
 
-        .brandRight
-            min-height: inherit
-            display: flex
-            justify-content: center
-            align-items: center
-            color: $mainDarkColor
+            div:first-child
+                font-weight: 900
+                font-size: 38px
+                line-height: 38px
 
-            .brandLabelText
-                border-left: #F16D7F solid 12px
-                padding-left: 15px
-                box-sizing: border-box
+            div:last-child
+                font-weight: bold
+                font-size: 20px
+                line-height: 24px
+
+                span
+                    color: #F16D7F
+
+            .brandLabelBar
+                display: inline-block
+                background-color: #F16D7F
+                width: 12px
                 height: 61px
 
-                div:first-child
-                    font-weight: 900
-                    font-size: 38px
-                    line-height: 38px
-
-                div:last-child
-                    font-weight: bold
-                    font-size: 20px
-                    line-height: 24px
-
-                    span
-                        color: #F16D7F
-
-                .brandLabelBar
-                    display: inline-block
-                    background-color: #F16D7F
-                    width: 12px
-                    height: 61px
-
 @media ( min-width: $breakpoint-tablet )
-    .brandWrap
+    .brand
         min-height: 367.57px
 
-        .container
+        .brandWrap
             min-height: inherit
             display: grid
             grid-template-columns: 1fr 1fr
@@ -54,6 +56,39 @@
             .brandLeft
                 display: block
 
+                img
+                    width: 100%
+
+            .brandRight
+                justify-content: flex-start
+
+                .brandLabelText
+                    margin-left: 40px
+                    height: 70px
+
+                div:first-child
+                    font-size: 44px
+                    line-height: 32px
+
+                div:last-child
+                    margin-top: 14px
+                    font-size: 24px
+
 @media ( min-width: $breakpoint-laptop )
-    .brandWrap
+    .brand
         min-height: 765px
+
+        .brandWrap
+
+            .brandRight
+
+                .brandLabelText
+                    margin-left: 64px
+                    height: 80px
+
+                    div:first-child
+                        font-size: 48px
+                        line-height: 38px
+
+                    div:last-child
+                        font-size: 32px
