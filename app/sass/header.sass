@@ -1,0 +1,61 @@
+@import "variables"
+
+body
+    margin: 0
+    font-family: Lato, sans-serif
+
+header
+    box-sizing: border-box
+    padding: 18px 16px
+    height: 74px
+    background: $mainDarkColor
+
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        box-sizing: border-box
+
+    i
+        color: E8E8E8
+
+    .userIcon, .cartIconWrap
+        display: none
+
+    .searchIcon
+        margin-left: 41px
+
+@media ( min-width: $breakpoint-laptop )
+    .container
+        margin: 0 auto
+        width: 1140px
+
+@media ( min-width: $breakpoint-tablet )
+    header .container
+        padding-left: 32px
+        padding-right: 32px
+
+        .userIcon, .cartIconWrap
+            display: inline
+
+        .userIcon
+            margin-left: 25px
+            margin-right: 42px
+
+        .cartIconWrap
+            position: relative
+            display: inline
+
+            span
+                display: inline-block
+                position: absolute
+                background-color: #F16D7F
+                color: white
+                border-radius: 50%
+                width: 19px
+                height: 19px
+                text-align: center
+                right: -8px
+                top: -22px
+                font-size: 12px
+                line-height: 18px
