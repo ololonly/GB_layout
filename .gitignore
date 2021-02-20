@@ -1,9 +1,6 @@
 #build
 dist
 
-#minified images
-app/images/dest/
-
 #vscode
 .vscode/
 
