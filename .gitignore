@@ -4,9 +4,6 @@ dist
 #minified images
 app/images/dest/
 
-#minified resources
-*.min.*
-
 #vscode
 .vscode/
 

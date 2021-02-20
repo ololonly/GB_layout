@@ -86,6 +86,7 @@ exports.styles = styles;
 exports.images = images;
 exports.cleanimg = cleanimg;
 exports.cleandist = cleandist;
+exports.watch = startWatch;
 exports.build = series(cleandist, images, styles, scripts, buildCopy);
 
 exports.default = parallel(images, styles, scripts, browserSyncInit, startWatch);
