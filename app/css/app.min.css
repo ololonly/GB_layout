@@ -27,9 +27,6 @@ header .container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box
 }
-header i {
-  color: E8E8E8
-}
 header .cartIconWrap,
 header .userIcon {
   display: none
@@ -119,8 +116,7 @@ header .searchIcon {
 }
 .brandMenu .menu .menuItems ul {
   padding: 0;
-  margin: 0;
-  margin-bottom: 20px
+  margin: 0 0 20px 0
 }
 .brandMenu .menu .menuItems ul li {
   list-style: none;
